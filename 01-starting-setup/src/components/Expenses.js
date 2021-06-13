@@ -1,10 +1,12 @@
+import React from 'react'
 import ExpenseItem from './ExpenseItem'
 import Card from './Card'
 import './Expenses.css'
 
 function Expenses(props) {
-  const renderedExpenses = props.expenses.map(expense => (
-    <ExpenseItem 
+  const renderedExpenses = props.expenses.map((expense, i) => (
+    <ExpenseItem
+      key={i}
       date={expense.date}
       title={expense.title}
       amount={expense.amount} />
