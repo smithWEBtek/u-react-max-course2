@@ -4,7 +4,7 @@ import Card from '../UI/Card'
 import './Expenses.css'
 
 const Expenses = (props) => {
-  const renderedExpenses = props.expenses.map((expense, i) => (
+  const renderedExpenses = props.items.map((expense, i) => (
     <ExpenseItem
       key={i}
       date={expense.date}
