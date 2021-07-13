@@ -17,7 +17,6 @@ const ExpenseItem = (props) => {
       <div className="expense-item__description">
         <h2>{title}</h2>
         <div className="expense-item__price">${props.amount}</div>
-        {/* <button onClick={() => console.log('the arrow function did this')}>Button2 arrowed</button> */}
         <button onClick={clickHandler}>Change title</button>
       </div>
     </Card>
