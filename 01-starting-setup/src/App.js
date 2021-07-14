@@ -39,8 +39,6 @@ const App = () => {
     })
   }
 
-  console.log('expenses: ', expenses)
-
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
