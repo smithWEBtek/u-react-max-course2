@@ -12,15 +12,17 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
 
   useEffect(() => {
-    console.log('checking form validity');
+    const identifier = setTimeout(() => {
+      console.log('checking form validity')
+      setFormIsValid(
+        enteredEmail.includes('@') && enteredPassword.trim().length > 6
+      );
+    }, 500) // debouncing the user input
 
-    setFormIsValid(
-      enteredEmail.includes('@') && enteredPassword.trim().length > 6
-    );
-    const minutes = new Date().getMinutes()
-    if (minutes < 41) {
-      setFormIsValid(false)
-    }
+    return () => {
+      console.log('cleanup');
+      clearTimeout(identifier)
+    } // a clean up function, before useEffect executes again
 
   }, [enteredEmail, enteredPassword, formIsValid])
 
