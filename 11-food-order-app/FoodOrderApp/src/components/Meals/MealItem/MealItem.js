@@ -1,4 +1,4 @@
-import MealItemForm from '../MealItem/MealItemForm';
+import MealItemForm from './MealItemForm';
 
 import classes from './MealItem.module.css';
 
