@@ -12,3 +12,15 @@
   justify-content: center;
   text-align: center;
 }
+
+.allowed {
+  background: lightgreen;
+  width: 150px;
+  margin: auto;
+}
+
+.not-allowed {
+  background: pink;
+  width: 150px;
+  margin: auto;
+}
