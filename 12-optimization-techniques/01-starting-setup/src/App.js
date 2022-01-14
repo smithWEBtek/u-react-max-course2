@@ -8,7 +8,6 @@ function App() {
   const [showParagraph, setShowParagraph] = useState(false);
   const [allowToggle, setAllowToggle] = useState(false);
   const allowToggleHandler = () => {
-    // setAllowToggle(true);
     setAllowToggle((prevAllowToggle) => !prevAllowToggle)
   };
   console.log('APP RUNNING')
