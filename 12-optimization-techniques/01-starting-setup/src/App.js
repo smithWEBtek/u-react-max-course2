@@ -24,7 +24,7 @@ function App() {
       <p className={allowToggle ? 'allowed' : 'not-allowed'}>Toggling state</p>
       <DemoOutput show={showParagraph} />
       <Button onClick={allowToggleHandler}>Allow Toggling</Button>
-      <Button onClick={toggleParagraphHandler}>Show Paragraph</Button>
+      {/* <Button onClick={toggleParagraphHandler}>Show Paragraph</Button> */}
     </div>
   );
 }
